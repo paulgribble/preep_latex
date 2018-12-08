@@ -1,8 +1,8 @@
 all:	doc.pdf
 
-doc.pdf:	doc.tex formatting.tex refs.bib
+doc.pdf:	doc.tex refs.bib
 	latexmk -pdf doc.tex
-	latexmk -c doc.tex formatting.tex
+	latexmk -c doc.tex 
 	rm -r doc.bbl
 
 clean:
