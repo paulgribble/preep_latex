@@ -40,8 +40,8 @@
 
 \section*{Introduction}
 \lipsum[2-4] Here is a citation \cite{Mattar2005-oq}. In
-\cite{McGregor2016-ku} the somatosensory cortex was implicated in
-motor learning through visual observation.
+\cite{McGregor2016-ku} somatosensory cortex was implicated in motor
+learning through visual observation.
 
 
 \section*{Methods}
@@ -52,9 +52,62 @@ motor learning through visual observation.
 \subsection*{Procedure}
 \lipsum[7-8]
 
+\subsection*{Statistical Analyses}
+
+Equation~\ref{eq:mean} shows the equation for calculating the mean of
+$N$ values $X_{1}$ to $X_{N}$.
+
+\begin{equation}
+  \bar{X} = \left( \frac{1}{N}  \right) \sum_{i=1}^{N} X_{i}
+  \label{eq:mean}
+\end{equation}
+
 
 \section*{Results}
 \lipsum[9-14]
+
+As you can see in Figure~\ref{fig:subjectmeans}, we have collected
+some data already.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.95\columnwidth]{figure.pdf}
+  \caption{Some data from our experiment.}
+  \label{fig:subjectmeans}
+\end{figure}    
+
+Table~\ref{tab:randomjunk} shows some data organized into a table.
+
+\begin{table}
+  \centering
+  \begin{tabular}{|r|l|}
+    \hline
+    \textbf{Value} & \textbf{Format}\\
+    \hline\hline
+  7C0 & hexadecimal \\
+  3700 & octal \\ \cline{2-2}
+  11111000000 & binary \\
+  \hline
+  1984 & decimal \\
+  \hline
+  \end{tabular}
+  \caption{Some data.}
+  \label{tab:randomjunk}
+\end{table}
+
+Figure~\ref{fig:percep} shows some resting-state fMRI results.
+
+\begin{figure*}
+  \centering
+  \includegraphics[width=\textwidth]{percep.pdf}
+  \caption{Proprioceptive training increased proprioceptive acuity. A:
+    perceptual acuity was assessed in blocks 1 and 5 of the
+    proprioceptive discrimination task, during which trial-by-trial
+    feedback was withheld from all subjects. Perceptual acuity was
+    quantified as the interquartile range (IQR) of the psychometric
+    function estimated from each subject’s set of binary responses.}
+  \label{fig:percep}
+\end{figure*}
 
 
 \section*{Discussion}
@@ -66,5 +119,4 @@ motor learning through visual observation.
 
 
 \end{document}
-
 
