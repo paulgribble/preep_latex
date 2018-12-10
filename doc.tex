@@ -3,7 +3,7 @@
 \usepackage{lipsum}
 
 \title{A Preprint Template in \Hologo{LaTeX}}
-\shorttitle{Preprint Template}
+\shorttitle{A Preprint Template}
 
 \author[1,2,3,5,*]{Paul L. Gribble}
 \author[1,2,4]{Ford Prefect}
@@ -37,12 +37,14 @@
 \maketitle
 \thispagestyle{firstpage}
 
-
 \section*{Introduction}
-\lipsum[2-4] Here is a citation \cite{Mattar2005-oq}. In
-\cite{McGregor2016-ku} somatosensory cortex was implicated in motor
-learning through visual observation.
 
+\lipsum[2-6]
+
+Here is a citation \citep{Mattar2005-oq}. In
+\cite{McGregor2016-ku} somatosensory cortex was implicated in motor
+learning through visual observation. Here is a double-citation
+\citep{McGregor2016-ku,Mattar2005-oq}.
 
 \section*{Methods}
 
@@ -50,7 +52,7 @@ learning through visual observation.
 \lipsum[6]
 
 \subsection*{Procedure}
-\lipsum[7-8]
+\lipsum[7-9]
 
 \subsection*{Statistical Analyses}
 
@@ -64,15 +66,21 @@ $N$ values $X_{1}$ to $X_{N}$.
 
 
 \section*{Results}
-\lipsum[9-14]
+
+\lipsum[10-15]
 
 As you can see in Figure~\ref{fig:subjectmeans}, we have collected
 some data already.
 
+\lipsum[16-17]
+
 \begin{figure}
   \centering
   \includegraphics[width=0.95\columnwidth]{figure.pdf}
-  \caption{Some data from our experiment.}
+  \caption{Subject-wise FC values on day 1 (baseline) and day 2 (after
+    observation) for the learning group. Subjects are rank ordered
+    along the x-axis according to increasing motor learning scores as
+    indicated in parentheses.}
   \label{fig:subjectmeans}
 \end{figure}    
 
@@ -91,27 +99,33 @@ Table~\ref{tab:randomjunk} shows some data organized into a table.
   1984 & decimal \\
   \hline
   \end{tabular}
-  \caption{Some data.}
+  \caption{Here are the hexadecimal, octal, binary and decimal
+    representations of the decimal number 1984.}
   \label{tab:randomjunk}
 \end{table}
 
-Figure~\ref{fig:percep} shows some resting-state fMRI results.
+\lipsum[18-19]
+
+Figure~\ref{fig:percep} shows an example of psychometric curves
+estimated from proprioceptive tests.
 
 \begin{figure*}
   \centering
-  \includegraphics[width=\textwidth]{percep.pdf}
+  \includegraphics[width=0.95\textwidth]{percep.pdf}
   \caption{Proprioceptive training increased proprioceptive acuity. A:
     perceptual acuity was assessed in blocks 1 and 5 of the
     proprioceptive discrimination task, during which trial-by-trial
     feedback was withheld from all subjects. Perceptual acuity was
     quantified as the interquartile range (IQR) of the psychometric
-    function estimated from each subject’s set of binary responses.}
+    function estimated from each subject's set of binary responses.}
   \label{fig:percep}
 \end{figure*}
 
+\lipsum[20-21]
 
 \section*{Discussion}
-\lipsum[15-20]
+
+\lipsum[22-28]
 
 
 \bibliographystyle{jneurophysiol}
@@ -120,3 +134,8 @@ Figure~\ref{fig:percep} shows some resting-state fMRI results.
 
 \end{document}
 
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
